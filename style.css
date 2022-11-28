@@ -126,7 +126,7 @@ label #cancel{
 
 header {
     width: 100%;
-    height: 657px;
+    height: 650px;
 }
 nav {
     width: 100%;
@@ -142,26 +142,74 @@ nav {
     position: absolute;
     z-index: -1;
     top: 0;
+    overflow: hidden;
 }
-
 .navigation {
     display: flex;
     justify-content: space-between;
+    animation: up 600ms;
+}
+.introduce h3 {
+    animation: up 600ms;
+}
+.introduce h1 {
+    animation: right 800ms;
+}
+.line {
+    animation: left 1000ms;
+}
+.introduce p {
+    animation: down 1200ms;
+}
+.fas {
+    animation: up 1200ms;
+}
+@keyframes up {
+    0% {
+        transform: translateY(-200px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes left {
+    0% {
+        transform: translateX(-300px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes right {
+    0% {
+        transform: translateX(300px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes down {
+    0% {
+        transform: translateY(200px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }
 .navigation h1 {
     font-family: josefin;
     color: white;
     font-size: 30pt;
     margin: 0;
-    padding-top: 50px;
-    padding-left: 50px;
+    padding-top: 4%;
+    padding-left: 4%;
 }
 .introduce {
     color: white;
     font-family: josefinlight;
     font-weight: bolder;
     font-size: 25pt;
-    padding: 40px 150px;
+    padding: 3% 13%;
 }
 .introduce h3, h1, .introduce p {
     margin : 20px 0;
@@ -194,35 +242,48 @@ nav img {
 }
 .profile {
     width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .profile img{
-    margin: 35px 160px;
-    width: 26%;
+    width: 50%;
     z-index: 3;
     position: absolute;
 }
 .about {
-    width: 50%;
+    width: 100%;
     color: white;
+}
+.navflex {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .biography {
     font-family: photography;
-    font-size: 40pt;
+    font-size: 4vw;
     display: flex;
-    justify-content: flex-end;
-    margin-top: 40px;
-    margin-right: 140px;
+    justify-content: flex-start;
+    animation: biograph 500ms;
 }
 .biography-text {
     font-family: josefin;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     text-align: right;
-    margin-right: 140px;
-    font-size: 15pt;
+    font-size: 1.5vw;
     line-height: 30px;
 }
-
+@keyframes biograph {
+    0% {
+        transform: translateX(200px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
 /*section-2---------------------------------------*/
 .section-2 {
     width: 100%;
@@ -252,16 +313,13 @@ nav img {
     background-color: #D89737;
     width: 140px;
     height: 4px;
-    position: absolute;
-    left: 600px;
-    top: 70px;
 }
 .text-what {
     font-family: josefin;
     color: white;
     font-size: 35pt;
     text-align: center;
-    margin-top: 90px;
+    margin-top: 25px;
 }
 .text-there {
     font-family: josefin;
@@ -327,6 +385,7 @@ nav img {
 .box1, .box2 {
     display: flex;
     margin-bottom: 80px;
+    overflow: hidden;
 }
 .box1 img, .box2 img {
     width: 100%;
@@ -370,36 +429,41 @@ nav img {
 .collection {
     width: 100%;
     height: 280px;
+    text-align: center;
+    justify-items: center;
+}
+.justify {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
 }
 .line-orange4 {
     background-color:#D89737;
     width: 140px;
     height: 4px;
-    position: relative;
-    top: 70px;
-    left: 600px;
 }
 .text-some {
     font-family: josefin;
     color: white;
     font-size: 35pt;
-    text-align: center;
-    margin-top: 90px;
+    margin-top: 28px;
 }
 .text-result {
     font-family: josefin;
     color: white;
     font-size: 15pt;
-    text-align: center;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 /*-------------------------------------------------*/
 .picture1, .picture2, .picture3, .picture4, .picture5, .picture6 {
-    overflow-y: hidden;
+    overflow: hidden;
 }
 .box3-1, .box3-2, .box4-1, .box4-2, .box5-1, .box5-2 {
-    overflow-y: hidden;
+    overflow: hidden;
+}
+.container3, .container4, .container5 {
+    overflow: hidden;
 }
 .container3 {
     width: 100%;
@@ -409,49 +473,82 @@ nav img {
 .picture1 {
     width: 100%;
     height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: -50px;
 }
 .boxabu {
     background-color:#403B41;
-    width: 450px;
-    height: 380px;
-    margin-left: 160px;
+    width: 70%;
+    height: 96%;
+    position: absolute;
 }
 .box3-1 {
     width: 50%;
-    height: 380px;
+    height: 650px;
 }
 .box3-1 img {
     width: 60%;
     z-index: 5;
-    position: relative;
-    bottom: 300px;
-    left: 190px;
+    position: absolute;
 }
 .box3-2 {
     width: 50%;
-    height: 380px;
+    height: 650px;
 }
 .box3-2 img {
     width: 60%;
     z-index: 5;
-    position: relative;
-    bottom: 300px;
-    left: 91px;
+    position: absolute;
+}
+.desc1 {
+    width: 93%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+}
+.desc2 {
+    width: 90%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    left: -2%;
 }
 .rest {
+    width: 93%;
+    height: 70px;   
+    display: flex;
+    justify-content: flex-end;
+}
+.rest h1{
     font-family: josefin;
     color: white;
     font-size: 22pt;
-    margin-left: 150px;
-    padding: 8px;
+    margin-top: 20px;
+}
+.box-know1 {
+    width: 100%;
+    height: 85px;   
+    display: flex;
+    justify-content: flex-end;
+}
+.box-know2 {
+    width: 100%;
+    height: 85px;   
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    left: 10%;
 }
 .know1 {
     font-family: josefin;
     color: #FF3400;
     font-size: 18pt;
-    margin-left: 159px;
     text-decoration: underline;
-    padding-top: 5px;
+    padding-top: 15px;
 }
 .know1:hover {
     color: #862e18;
@@ -464,27 +561,37 @@ nav img {
 .picture2 {
     width: 100%;
     height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -50px;
 }
 .boxabu2 {
     background-color:#403B41;
-    width: 450px;
-    height: 380px;
-    margin-left: 60px;
+    width: 70%;
+    height: 96%;
+    position: absolute;
+
 }
 .logo {
+    width: 90%;
+    height: 70px;   
+    display: flex;
+    justify-content: flex-start;
+}
+.logo h1 {
     font-family: josefin;
     color: white;
     font-size: 22pt;
-    margin-left: 51px;
-    padding: 8px;
+    margin-top: 20px;
 }
 .know2 {
     font-family: josefin;
     color: #FF3400;
     font-size: 18pt;
-    margin-left: 60px;
     text-decoration: underline;
-    padding-top: 5px;
+    padding-top: 15px;
 }
 .know2:hover {
     color: #862e18;
@@ -501,49 +608,82 @@ nav img {
 .picture3 {
     width: 100%;
     height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: -50px;
 }
 .boxabu3 {
     background-color:#403B41;
-    width: 450px;
-    height: 380px;
-    margin-left: 160px;
+    width: 70%;
+    height: 96%;
+    position: absolute;
 }
 .box4-1 {
     width: 50%;
-    height: 380px;
+    height: 650px;
 }
 .box4-1 img {
     width: 40%;
     z-index: 5;
     position: relative;
-    bottom: 325px;
-    left: 248px;
 }
 .box4-2 {
     width: 50%;
-    height: 380px;
+    height: 650px;
 }
 .box4-2 img {
     width: 40%;
     z-index: 5;
     position: relative;
-    bottom: 325px;
-    left: 152px;
+}
+.desc3 {
+    width: 93%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+}
+.desc4 {
+    width: 60%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    left: 1%;
 }
 .illust {
+    width: 93%;
+    height: 90px;   
+    display: flex;
+    justify-content: flex-end;
+}
+.illust h1 {
     font-family: josefin;
     color: white;
     font-size: 22pt;
-    margin-left: 150px;
-    padding: 8px;
+    padding-top : 8px;
+}
+.box-know3 {
+    width: 100%;
+    height: 85px;   
+    display: flex;
+    justify-content: flex-end;
+}
+.box-know4 {
+    width: 100%;
+    height: 85px;   
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    left: 10%;
 }
 .know3 {
     font-family: josefin;
     color: #FF3400;
     font-size: 18pt;
-    margin-left: 159px;
     text-decoration: underline;
-    padding-top: 5px;
+    padding-top: 15px;
 }
 .know3:hover {
     color: #862e18;
@@ -553,27 +693,36 @@ nav img {
 .picture4 {
     width: 100%;
     height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -50px;
 }
 .boxabu4 {
     background-color:#403B41;
-    width: 450px;
-    height: 380px;
-    margin-left: 60px;
+    width: 70%;
+    height: 96%;
+    position: absolute;
 }
 .poster {
+    width: 90%;
+    height: 90px;   
+    display: flex;
+    justify-content: flex-start;
+}
+.poster h1 {
     font-family: josefin;
     color: white;
     font-size: 22pt;
-    margin-left: 51px;
-    padding: 8px;
+    padding-top: 8px;
 }
 .know4 {
     font-family: josefin;
     color: #FF3400;
     font-size: 18pt;
-    margin-left: 60px;
     text-decoration: underline;
-    padding-top: 5px;
+    padding-top: 15px;
 }
 .know4:hover {
     color: #862e18;
@@ -590,38 +739,73 @@ nav img {
 .picture5 {
     width: 100%;
     height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    right: -50px;
 }
 .boxabu5 {
     background-color:#403B41;
-    width: 450px;
-    height: 380px;
-    margin-left: 160px;
+    width: 70%;
+    height: 96%;
+    position: absolute;
 }
 .box5-1 {
     width: 50%;
-    height: 380px;
+    height: 650px;
 }
 .box5-1 img {
     width: 60%;
     z-index: 5;
     position: relative;
-    bottom: 300px;
-    left: 190px;
+}
+.desc5 {
+    width: 93%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-start;
+}
+.desc6 {
+    width: 60%;
+    height: 100px;
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    left: 1%;
 }
 .manipulation {
+    width: 93%;
+    height: 90px;   
+    display: flex;
+    justify-content: flex-end;
+}
+.manipulation h1 {
     font-family: josefin;
     color: white;
     font-size: 22pt;
-    margin-left: 150px;
-    padding: 8px;
+    padding-top: 8px;
+}
+.box-know5 {
+    width: 100%;
+    height: 85px;   
+    display: flex;
+    justify-content: flex-end;
+}
+.box-know6 {
+    width: 100%;
+    height: 85px;   
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    left: 10%;
 }
 .know5 {
     font-family: josefin;
     color: #FF3400;
     font-size: 18pt;
-    margin-left: 159px;
     text-decoration: underline;
-    padding-top: 5px;
+    padding-top: 15px;
 }
 .know5:hover {
     color: #862e18;
@@ -631,38 +815,45 @@ nav img {
 .picture6 {
     width: 100%;
     height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -50px;
 }
 .boxabu6 {
     background-color:#403B41;
-    width: 450px;
-    height: 380px;
-    margin-left: 60px;
+    width: 70%;
+    height: 96%;
+    position: absolute;
 }
 .box5-2 {
     width: 50%;
-    height: 380px;
+    height: 650px;
 }
 .box5-2 img {
     width: 40%;
     z-index: 5;
     position: relative;
-    bottom: 325px;
-    left: 152px;
 }
 .vector {
+    width: 90%;
+    height: 90px;   
+    display: flex;
+    justify-content: flex-start;
+}
+.vector h1 {
     font-family: josefin;
     color: white;
     font-size: 22pt;
-    margin-left: 51px;
-    padding: 8px;
+    padding-top: 8px;
 }
 .know6 {
     font-family: josefin;
     color: #FF3400;
     font-size: 18pt;
-    margin-left: 60px;
     text-decoration: underline;
-    padding-top: 5px;
+    padding-top: 15px;
 }
 .know6:hover {
     color: #862e18;
@@ -683,10 +874,14 @@ nav img {
     margin-top: 18px;
     overflow-y: hidden;
 }
+.flex {
+    display: flex;
+    justify-content: center;
+}
 .touch {
     height: 150px;
-    margin-left: 470px;
     margin-top: 35px;
+    overflow: hidden;
 }
 .touch h1 {
     font-family: josefin;
@@ -715,7 +910,7 @@ nav img {
     width: 100%;
     height: 73px;
     display: flex;
-    margin-top: 24px;
+    margin-top: 15px;
     overflow-y: hidden;
 }
 .contact1, .contact2, .contact3 {
@@ -724,18 +919,18 @@ nav img {
     align-items: center;
 }
 .contact1 img {
-    height: 35%;
-    width: 8%;
+    height: auto;
+    width: 32px;
     margin-left: 140px;
 }
 .contact2 img {
-    height: 36%;
-    width: 7%;
+    height: auto;
+    width: 32px;
     margin-left: 67px;
 }
 .contact3 img {
-    height: 40%;
-    width: 5%;
+    height: auto;
+    width: 20px;
 }
 .contact1 p, .contact2 p, .contact3 p {
     margin-left: 25px;
@@ -760,7 +955,7 @@ nav img {
     width: 70%;
 }
 .insta a {
-    margin: 0;
+    margin-right: -20px;
 }
 .lineleft {
     background-color: black;
