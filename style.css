@@ -8,11 +8,11 @@
 }
 @font-face {
     font-family: josefinlight;
-    src: url(font/JosefinSans-Light.ttf);
+    src: url(Font/JosefinSans-Light.ttf);
 }
 @font-face {
     font-family: oswald;
-    src: url(font/Oswald-Bold.ttf);
+    src: url(Font/Oswald-Bold.ttf);
 }
 html {
     scroll-behavior: smooth;
