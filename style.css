@@ -247,7 +247,7 @@ nav img {
     align-items: center;
 }
 .profile img{
-    width: 50%;
+    width: 45%;
     z-index: 3;
     position: absolute;
 }
@@ -402,7 +402,7 @@ nav img {
     color: white;
     font-size: 80pt;
     text-align: right;
-    padding-right: 40px;
+    padding-right: 6%;
     padding-bottom: 80px;
 }
 .box1-1, .box1-2, .box2-1, .box2-2 {
@@ -915,25 +915,25 @@ nav img {
 }
 .contact1, .contact2, .contact3 {
     display: flex;
-    width: 31%;
+    width: 33%;
     align-items: center;
 }
 .contact1 img {
     height: auto;
     width: 32px;
-    margin-left: 140px;
+    margin-left: 120px;
 }
 .contact2 img {
     height: auto;
     width: 32px;
-    margin-left: 67px;
+    margin-left: 47px;
 }
 .contact3 img {
     height: auto;
     width: 20px;
 }
 .contact1 p, .contact2 p, .contact3 p {
-    margin-left: 25px;
+    margin-left: 20px;
     font-family: josefin;
     font-size: 18pt;
     text-decoration: underline;
