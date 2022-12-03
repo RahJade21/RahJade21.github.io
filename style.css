@@ -248,8 +248,6 @@ nav img {
 }
 .profile img{
     width: 45%;
-    z-index: 3;
-    position: absolute;
 }
 .about {
     width: 100%;
@@ -974,4 +972,419 @@ nav img {
 .dotright {
     border: solid black 8px; 
     border-radius: 50%;
+}
+
+
+
+
+@media (max-width:600px) {
+    .sidebar {
+        right: -250px;
+        width: 120px;
+        height: 420px;
+        transition: all .5s ease;
+        font-family: josefin;
+      }
+      .sidebar header {
+        font-size: 22px;
+        height: 150px;
+        color: white;
+        line-height: 10px;
+      }
+      .sidebar ul a{
+        height: 40px;
+        width: 100%;
+        line-height: 35px;
+        font-size: 14pt;
+        padding-right: 60px;
+        box-sizing: border-box;
+        transition: .4s;
+        text-align: right;
+      }
+      .navigasibaru img {
+        width: 60%;
+      }
+      .sidebar ul a i{
+        margin-left: 40px;
+      }
+    header {
+        width: 100%;
+        height: 100%;
+    }
+    .navigation h1 {
+        font-size: 25pt;
+        padding-top: 9%;
+        padding-left: 7%;
+    }
+    label #btn,label #cancel{
+        position: absolute;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      label #btn{
+        right: 10px;
+        top: 50px;
+        font-size: 35px;
+        color: white;
+        padding: 6px 12px;
+        transition: all .5s;
+      }
+      label #cancel{
+        z-index: 1111;
+        right: -195px;
+        top: 50px;
+        font-size: 30px;
+        color: #0a5275;
+        padding: 4px 9px;
+        transition: all .5s ease;
+      }
+      #check:checked ~ .sidebar{
+        right: 0;
+      }
+      #check:checked ~ label #btn{
+        right: 250px;
+        opacity: 0;
+        pointer-events: none;
+      }
+      #check:checked ~ label #cancel{
+        right: 5px;
+      }
+      #check:checked ~ section{
+        margin-right: 0px;
+      }
+      .navigasisection{
+        background: url(bg.jpeg) no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100vh;
+        transition: all .5s;
+      }
+    
+    .navigation h1 {
+        font-size: 24pt;
+    }
+    .introduce {
+        padding-top: 20%;
+    }
+    .introduce h3 {
+        font-size: 20pt;
+    }
+    .introduce h1 {
+        font-size: 30pt;
+    }
+    .introduce p {
+        font-size: 15pt;
+    }
+    /*--------------------------*/
+    .section-1 {
+        display: block;
+        height: 680px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .navflex {
+        display: inherit;
+        width: 100%;
+    }
+    .profile img {
+        position: inherit;
+        justify-content: center;
+        width: 45%;
+    }
+    .biography, .biography-text {
+        justify-content: center;
+        font-size: 20pt;
+        margin-top: 10px;
+    }
+    .biography-text {
+        text-align: center;
+        font-size: 10pt;
+    }
+    .profile {
+        width: 100%;
+    }
+
+    /*section-2---------------------------------------*/
+    .section-2 {
+        width: 100%;
+        height: 1900px;
+        position: relative;
+        overflow: hidden;
+    }
+    .backgroundheader2 {
+        background-image: url(Bahan/BG\ Mobile\ 2.png);
+        height: 2000px;
+        background-size: cover;
+        overflow: hidden;
+    }
+    .hitam2 {
+        height: 2000px;
+    }
+    .line-orange {
+        width: 100px;
+        height: 3px;
+    }
+    .text-what {
+        font-size: 22pt;
+    }
+    .text-there {
+        font-size: 8pt;
+        line-height: 12pt;
+    }
+    .justify {
+        margin-top: 60px;
+    }
+    .container1 {
+        width: 100%;
+        height: auto;
+        top: 230px;
+        overflow: hidden;
+    }
+    .languages img {
+        width: 75%;
+        margin: 10px 0;
+    }
+    .skill img {
+        width: 75%;
+        margin: 25px 0;
+    }
+    .lanskill {
+        margin: 0 10%;
+        width: 80%;
+        height: 800px;
+        padding-top: 50px;
+    }
+    .languages {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .languages1 {
+        margin-left: 0;
+        margin-top: 10px;
+        font-size: 28pt;
+    }
+    .langcenter, .skillcenter {
+        display: flex;
+        justify-content: center;
+    }
+    .line-orange2, .line-orange3 {
+        margin: 0;
+        height: 3px;
+        width: 90px;
+    }
+    .skill {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+    .skill1 {
+        margin-left: 0;
+        margin-top: 15px;
+        font-size: 28pt;
+    }
+    .container2 {
+        width: 100%;
+        left: 0;
+        top: 870px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container2 h1 {
+        padding: 0;
+        padding-bottom: 20px;
+    }
+    .box1-1, .box1-2, .box2-1, .box2-2 {
+        padding: 0 43px;
+    }
+    /*------------------------------------*/
+    .section-3 {
+        overflow: hidden;
+        height: 3550px;
+    }
+    .line-orange4 {
+        width: 100px;
+        height: 3px;
+    }
+    .text-some {
+        font-size: 22pt;
+    }
+    .text-result {
+        font-size:  8pt;
+        line-height: 12pt;
+    }
+    .collection {
+        height: 220px;
+    }
+    .container3 {
+        display: inherit;
+        height: 1100px;
+    }
+    .box3-1 {
+        width: 100%;
+        height: 500px;
+    }
+    .picture1 {
+        left: 0;
+    } 
+    .desc1 {
+        margin-left: 14.5%;
+    }
+    .rest {
+        justify-content: flex-start;
+    }
+    .know1, .know2, .know3, .know4, .know5, .know6 {
+        font-size: 15pt;
+        padding-top: 10px;
+    }
+    .rest h1, .logo h1, .illust h1, .poster h1, .manipulation h1, .vector h1 {
+        font-size: 18pt;
+    }
+    .box-know1 {
+        justify-content: flex-start;
+    }
+    .box3-2 {
+        margin-top: 50px;
+        width: 100%;
+    }
+    .picture2 {
+        left: 0;
+    } 
+    .desc2 {
+        justify-content: flex-end;
+        left: 0;
+        margin-left: 14.5%;
+    }
+    .logo {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .box-know2 {
+        justify-content: flex-start;
+        left: 0;
+    }
+    .container4 {
+        display: inherit;
+        height: 1100px;
+    }
+    .box4-1 {
+        width: 100%;
+        height: 500px;
+    }
+    .picture3 {
+        left: 0;
+    }
+    .desc3 {
+        margin-left: 14.5%
+    }
+    .illust {
+        justify-content: flex-start;
+    }
+    .box-know3 {
+        justify-content: flex-start;
+    }
+    .box4-2 {
+        margin-top: 50px;
+        width: 100%;
+    }
+    .picture4 {
+        left: 0;
+    }
+    .desc4 {
+        justify-content: center;
+        left: 0;
+        margin-left: 14.5%;
+    }
+    .poster {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .box-know4 {
+        justify-content: flex-start;
+        left: 0;
+    }
+    .container5 {
+        display: inherit;
+        height: 1100px;
+    }
+    .box5-1 {
+        width: 100%;
+        height: 500px;
+    }
+    .picture5 {
+        left: 0;
+    }
+    .desc5 {
+        margin-left: 14.5%
+    }
+    .manipulation {
+        justify-content: flex-start;
+    }
+    .box-know5 {
+        justify-content: flex-start;
+    }
+    .box5-2 {
+        margin-top: 50px;
+        width: 100%;
+    }
+    .picture6 {
+        left: 0;
+    }
+    .desc6 {
+        justify-content: center;
+        left: 0;
+        margin-left: 14.5%;
+    }
+    .vector {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .box-know6 {
+        justify-content: flex-start;
+        left: 0;
+    }
+    /*-------------------------------*/    
+    .section-4 {
+        height: 600px;
+    }
+    .touch h1 {
+        font-size: 35pt;
+    }
+    .flex {
+        margin-bottom: 20px;
+    }
+    .contact {
+        flex-direction: column;
+        height: 260px;
+        margin: 0 15%;
+    }
+    .contact1, .contact2, .contact3 {
+        width: 100%;
+        display: flex;
+        margin-bottom: 50px;
+    }
+    .contact1 img, .contact2 img {
+        margin: 0;
+        width: 28px;
+    }
+    .contact3 img {
+        margin: 0;
+        width: 18px;
+    }
+    .contact1 p, .contact2 p, .contact3 p {
+        font-size: 15pt;
+    }
+    .insta {
+        margin-top: 0;
+    }
+    .insta img {
+        width: 60%;
+    }
+    .lineleft, .lineright {
+        width: 20%;
+    }
 }
